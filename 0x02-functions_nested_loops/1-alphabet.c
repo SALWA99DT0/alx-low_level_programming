@@ -10,7 +10,7 @@ void print_alphabet(void)
 
 	/* print lowercase letters */
 
-for (i = 'a'; i<= 'z'; i++)
+for (i = 'a'; i <= 'z'; i++)
 
 _putchar(i);
 
