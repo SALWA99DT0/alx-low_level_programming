@@ -1,15 +1,28 @@
 #include "main.h"
 /**
-* print_alphabet_x10 - print alphabet x10 times
+* print_alphabet_x10 - print alphabet x10 lines,followed by a new line
 */
-void print_alphabet_x10(void)
-{
-	char i, line;
-{
-for (line = 0; line <= 9; line++)
 
-for (i = 'a' ; i <= 'z' ; i++)
-_putchar(i);
-_putchar('\n');
-}
-}
+void print_alphabet_x10(void)
+	{
+		char j;
+		int i;
+
+
+		i = 0;
+
+
+		while (i < 10)
+		{
+			j = 'a';
+			while (j <= 'z')
+			{
+				_putchar(j);
+				j++;
+	}
+			_putchar('\n');
+			i++;
+		}
+	}
+
+
