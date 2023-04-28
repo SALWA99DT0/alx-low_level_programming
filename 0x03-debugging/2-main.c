@@ -19,8 +19,16 @@ if (a  > largest)
 {
 largest = a;
 }
-return largest;
+return (largest);
 }
+/**
+ * main - Entry point for the program
+ *
+ * function initializes three integers and calls the largest_number function
+ * to find the largest of the three. The result is printed to the console.
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 int a, b, c;
