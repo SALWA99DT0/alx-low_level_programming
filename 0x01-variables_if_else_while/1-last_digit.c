@@ -9,8 +9,7 @@
 int main(void)
 {
 int n;
-printf("Enter a number: ");
-scanf("%d",&n);
+int numbers[] = {98, -98, 980};
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 if ((n % 10) > 5)
