@@ -32,6 +32,10 @@ c = 'A';
 }
 }
 }
+else
+{
+continue;
+}
 str[i] = c;
 }
 return (str);
