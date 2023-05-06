@@ -8,32 +8,18 @@
 */
 char *rot13(char *str)
 {
-int i, j;
+int i;
 char c;
 for (i = 0; str[i] != '\0'; i++)
 {
 c = str[i];
-if (isalpha(c))
+	if (c >= 'a' && c <= 'z')
 {
-for (j = 0; j < 13; j++)
-{
-if ((c >= 'a' && c < 'z') || (c >= 'A' && c < 'Z'))
-{
-c++;
+	c = (((c - 'a') + 13) % 26) + 'a';
 }
-else if (c == 'z')
+	else if (c >= 'A' && c <= 'Z')
 {
-c = 'a';
-}
-else if (c == 'Z')
-{
-c = 'A';
-}
-}
-}
-else
-{
-continue;
+	c = (((c - 'A') + 13) % 26) + 'A';
 }
 str[i] = c;
 }
